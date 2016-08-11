@@ -1,0 +1,30 @@
+
+
+
+  <%= form_for @user do |f| %>
+
+           <div class="field">
+             <%= f.label :name, class: "form-control" %>
+             <%= f.text_field :name, class: "form-control", placeholder: "Your name" %>
+           </div>
+
+           <div class="field">
+             <%= f.label :email, class: "form-control" %>
+             <%= f.text_field :email, autofocus: true, class: "form-control", placeholder: "Your email" %>
+           </div>
+
+           <div class="field">
+             <%= f.label :phone_number, class: "form-control" %>
+             <%= f.text_field :phone_number, autofocus: true, class: "form-control", placeholder: "Your phone number"%>
+           </div>
+
+           <div class="field">
+             <%= f.label :message, class: "form-control" %>
+             <%= f.text_area :message, class: "form-control", placeholder: "Ask us anything!" %>
+           </div>
+
+           <div class="actions">
+           <%= f.submit %>
+           </div>
+
+  <% end %>
