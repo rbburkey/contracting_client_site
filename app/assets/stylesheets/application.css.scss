@@ -51,6 +51,21 @@
      border-color: #999999;
  }
 
+ hr.small {
+       border: 0;
+       height: 1px;
+       background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+   }
+
+   hr.smaller {
+     border: 0;
+     height: 1px;
+     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+     width: 50px;
+   }
+
+
+
  .brand,
  .address-bar {
      display: none;
@@ -71,6 +86,15 @@
      font-weight: 400;
      letter-spacing: 3px;
  }
+
+#footer > a {
+  color: black;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus:hover {
+  color: #79121d;
+}
 
  .img-full {
      min-width: 100%;
@@ -121,15 +145,98 @@
      margin: 0 auto 0;
  }
 
- footer {
+ #footer {
      background: #fff;
      background: rgba(255,255,255,0.9);
+
  }
 
  footer p {
      margin: 0;
      padding: 50px 0;
  }
+
+textarea.form-control {
+  height: 190px;
+  color:  #5f5f5f;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  font: normal 13px sans-serif;
+  padding: 12px;
+  border: 1px solid #dbdbdb;
+  resize: vertical;
+}
+
+input.form-control {
+  width: 90%;
+  margin: 0;
+  background-color: #ffffff;
+  color:  #5f5f5f;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 12px 8px;
+  border: 1px solid #dbdbdb;
+}
+
+.timeline-image {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  height: 80px;
+  z-index: 100;
+  background-color: #79121d;
+  color: white;
+  border-radius: 100%;
+  border: 7px solid #f1f1f1;
+  text-align: center;
+
+}
+
+#logo_small {
+  width: 20%;
+  margin: 0 auto;
+}
+
+#form_color {
+  background-color: rgba(121,18,29,0.3);
+}
+
+#form-box {
+  padding: 30px 30px 30px 30px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgba(121,18,29, 0.8);
+}
+
+.text-mut {
+  text-shadow: 1px 1px 2px grey;
+}
+
+.btn {
+  display: block;
+  border-radius: 2px;
+  background-color:  rgb(121,18,29);
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 1px 2px 6px  rgba(0, 0, 0, 0.8);
+  padding: 14px 22px;
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+
+#contact_box {
+
+  width: 70%
+}
+
+
+
 
  @media screen and (min-width:768px) {
      .brand {
@@ -215,4 +322,9 @@
 list-style:none;
 margin-left: -40px;
 margin-top:20px;
+}
+
+
+#wood {
+  background: url("") no-repeat center center fixed;
 }

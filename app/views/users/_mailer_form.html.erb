@@ -1,30 +1,57 @@
+<div class="container" id="contact_box">
+  <div class="box" id="form-box">
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h3>Get your free estimate today!</h3>
+        <hr class="small">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <%= form_for @user do |f| %>
+        <div class="row">
+
+          <div class="col-md-4 col-md-offset-2">
+            <div class="form-group">
+              <%= f.label :name %>
+              <%= f.text_field :name, class: "form-control", placeholder: "Your name" %>
+            </div>
+
+            <div class="form-group">
+              <%= f.label :email%>
+              <%= f.text_field :email, autofocus: true, class: "form-control", placeholder: "Your email" %>
+            </div>
+
+            <div class="form-group">
+              <%= f.label :phone_number %>
+              <%= f.text_field :phone_number, autofocus: true, class: "form-control", placeholder: "Your phone number"%>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <%= f.label :message %>
+              <%= f.text_area :message, class: "form-control", placeholder: "Ask us anything!" %>
+            </div>
+          </div>
+          <br>
+          <div class="clearfix"></div>
+          <div class="col-lg-12 text-center">
+            <div class="form-group">
+              <div class="actions">
+                <%= f.submit "Free Estimate", class: "btn" %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <% end %>
 
 
-
-  <%= form_for @user do |f| %>
-
-           <div class="field">
-             <%= f.label :name, class: "form-control" %>
-             <%= f.text_field :name, class: "form-control", placeholder: "Your name" %>
-           </div>
-
-           <div class="field">
-             <%= f.label :email, class: "form-control" %>
-             <%= f.text_field :email, autofocus: true, class: "form-control", placeholder: "Your email" %>
-           </div>
-
-           <div class="field">
-             <%= f.label :phone_number, class: "form-control" %>
-             <%= f.text_field :phone_number, autofocus: true, class: "form-control", placeholder: "Your phone number"%>
-           </div>
-
-           <div class="field">
-             <%= f.label :message, class: "form-control" %>
-             <%= f.text_area :message, class: "form-control", placeholder: "Ask us anything!" %>
-           </div>
-
-           <div class="actions">
-           <%= f.submit %>
-           </div>
-
-  <% end %>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
