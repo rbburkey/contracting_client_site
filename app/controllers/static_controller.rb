@@ -8,5 +8,6 @@ class StaticController < ApplicationController
   end
 
   def work
+    @user = User.new
   end
 end
