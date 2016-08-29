@@ -1,9 +1,9 @@
 class UserMailer < ApplicationMailer
-  default from: 'robinsonbburkey@gmail.com'
+  default from: 'odn.spencer@gmail.com'
 
   def inquiry_email (user)
     @user = user
-    mail(to: @user.email, subject: "It Worked", template_path: 'user_mailer', template_name: 'inquiry_email' )
+    mail(to: 'odn.spencer@gmail.com', subject: "New Client!", template_path: 'user_mailer', template_name: 'inquiry_email' )
   end
 
 

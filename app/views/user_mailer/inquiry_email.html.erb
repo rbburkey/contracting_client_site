@@ -6,8 +6,15 @@
   <body>
     <h3>Hey Spencer and Alexander</h3>
     <p>
-      You have a possible new client.
+      You have a possible new client named <%=@user.name%>.
     </p>
+
+    <p>This is their message:</p>
+    <p><strong><%=@user.message%></strong></p><br>
+    <p>Here is their info:</p>
+    <p><strong>Phone number: <%=@user.phone_number%></strong></p>
+    <p><strong>Email: <%=@user.email%></strong></p><br>
+
     <p>
       Put the <em>spliff</em> down and respond A$AP, there is money to be had.. HU$TLE.
     </p>

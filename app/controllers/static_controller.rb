@@ -10,4 +10,7 @@ class StaticController < ApplicationController
   def work
     @user = User.new
   end
+
+  def thankyou
+  end
 end

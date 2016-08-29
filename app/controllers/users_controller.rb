@@ -13,7 +13,7 @@ class UsersController < ApplicationController
         UserMailer.inquiry_email(@user).deliver_now
         UserMailer.inquiry_email_response(@user).deliver_now
 
-        format.html { redirect_to(root_path, notice: 'User was successfully created.') }
+        format.html { redirect_to(successful_path, notice: 'User was successfully created.') }
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render action: 'new' }
