@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: odn_site_production
-  username: odn_site
-  password: <%= ENV['ODN_SITE_DATABASE_PASSWORD'] %>
+  url: <%= ENV[' postgres://znekcabdfhuilk:69ZwU3I2BWNfs6ucb9xMkGjn_l@ec2-23-23-76-90.compute-1.amazonaws.com:5432/dbsj0n8cbg3j2u'] %>
+  database: dbsj0n8cbg3j2u
+  username: znekcabdfhuilk
+  password: <%= ENV['69ZwU3I2BWNfs6ucb9xMkGjn_l'] %>
